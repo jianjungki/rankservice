@@ -12,7 +12,7 @@ AV.Cloud.define("rankinfo", function(request, response) {
       for (var i = 0; i < results.length; ++i) {
         sum += results[i].get("score");
       }
-      response.success();
+      response.success(sum);
     },
     error: function() {
       response.error("rankinfo find failed");
