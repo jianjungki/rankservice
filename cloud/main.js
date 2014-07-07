@@ -5,7 +5,7 @@ AV.Cloud.define("rankinfo", function(request, response) {
 	
   var query = new AV.Query("GameScore");
   query.near("score", request.params.score);
-  response.success(request.params.score);
+  
   query.find({
     success: function(results) {
       var sum = 0;
