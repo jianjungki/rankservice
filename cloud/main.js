@@ -17,4 +17,5 @@ AV.Cloud.define("rankinfo", function(request, response) {
     error: function() {
       response.error("rankinfo find failed");
     }
+	})
 });
