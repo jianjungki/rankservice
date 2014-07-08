@@ -20,6 +20,7 @@ AV.Cloud.define("rankinfo", function(request, response) {
 				name: '222', 
 				score: 50
 			};
+			response.success(JSON.stringify(greater));
 		  }
 		},
 		error: function() {
@@ -34,6 +35,7 @@ AV.Cloud.define("rankinfo", function(request, response) {
 				name: '111', 
 				score: 30
 			};
+			response.success(JSON.stringify(less));
 		  }
 		},
 		error: function() {
