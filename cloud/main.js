@@ -10,6 +10,9 @@ AV.Cloud.define("rankinfo", function(request, response) {
    lower.lessThan("score", request.params.score);
    
    var mainQuery = AV.Query.or(better, lower);
+   mainQuery.ascending("score");
+   mainQuery.limit(3);
+   
    mainQuery.find({
 		success: function(results) {
 	      var ret_arr = new Array();
