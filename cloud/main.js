@@ -27,7 +27,7 @@ AV.Cloud.define("rankinfo", function(request, response) {
 		}
    })
    
-   better.find({
+   lower.find({
 		success: function(results) {
 		  for (var i = 0; i < results.length; ++i) {
 			less = {
