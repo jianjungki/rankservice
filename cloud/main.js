@@ -8,10 +8,7 @@ AV.Cloud.define("rankinfo", function(request, response) {
   
   better.find({
     success: function(results) {
-      for (var i = 0; i < results.length; ++i) {
-        sum += results[i].get("score");
-      }
-      response.success(sum);
+      response.success(request.params.score);
     },
     error: function() {
       response.error("rankinfo find failed");
