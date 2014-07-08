@@ -17,8 +17,8 @@ AV.Cloud.define("rankinfo", function(request, response) {
 		success: function(results) {
 		  for (var i = 0; i < results.length; ++i) {
 			greater = {
-				name: results[i].get("playerName"), 
-				score: results[i].get("score")
+				name: '222', 
+				score: 50
 			};
 		  }
 		},
@@ -31,8 +31,8 @@ AV.Cloud.define("rankinfo", function(request, response) {
 		success: function(results) {
 		  for (var i = 0; i < results.length; ++i) {
 			less = {
-				name: results[i].get("playerName"), 
-				score: results[i].get("score")
+				name: '111', 
+				score: 30
 			};
 		  }
 		},
