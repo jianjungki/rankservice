@@ -21,8 +21,6 @@ AV.Cloud.define("rankinfo", function(request, response) {
 				name: results[i].get("playerName"), 
 				score: results[i].get("score")
 			};
-			if(request.params.id == results[i].get('objectId'))
-				element.rank = better.count();
 			ret_arr.push(element);
 		  }
 		  response.success(JSON.stringify(ret_arr));
