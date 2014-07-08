@@ -9,7 +9,7 @@ AV.Cloud.define("rankinfo", function(request, response) {
    var lower = new AV.Query("GameScore");
    lower.lessThan("score", request.params.score);
    
-   var mainQuery = AV.Query.or(lotsOfWins, fewWins);
+   var mainQuery = AV.Query.or(better, lower);
    mainQuery.find({
 		success: function(results) {
 	      var ret_arr = new Array();
